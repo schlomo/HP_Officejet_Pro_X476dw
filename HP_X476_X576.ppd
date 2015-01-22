@@ -35,7 +35,7 @@
 *Manufacturer: "HP"
 *ModelName: "HP Officejet Pro X476-X576 MFP"
 *ShortNickName: "HP Officejet Pro X476-X576 MFP"
-*NickName: "HP Officejet Pro X476-X576 MFP Postscript (recommended)"
+*NickName: "HP Officejet Pro X476-X576 MFP Postscript (improved)"
 *PSVersion: "(3010.107) 0"
 *LanguageLevel: "3"
 *ColorDevice: True
@@ -488,9 +488,10 @@
 *cupsUIConstraints PageSizeVsMediaTypeEnvelope: " *PageSize EnvChou4 *MediaType Labels"
 *cupsVersion: 1.5
 *cupsModelNumber: 0
-*cupsManualCopies: True
+*cupsManualCopies: False
 *cupsLanguages: "en da de es fi fr it ja ko no nl pt ru sv zh_CN zh_TW"
 *cupsFilter: "application/vnd.cups-postscript 0 hpps"
+*DefaultResolution: 600x600dpi
 *OpenUI *PageSize/Media Size: PickOne
 *OrderDependency: 10 AnySetup *PageSize
 *DefaultPageSize: A4
@@ -632,7 +633,7 @@
 *ParamCustomPageSize Orientation: 5 int 0 0
 *OpenUI *Duplex/Two-Sided: PickOne
 *OrderDependency: 50 AnySetup *Duplex
-*DefaultDuplex: None
+*DefaultDuplex: DuplexNoTumble
 *Duplex None/Off: "<</Duplex false /Tumble false>> setpagedevice"
 *Duplex DuplexNoTumble/Long-Edge Binding: "<</Duplex true /Tumble false>> setpagedevice"
 *Duplex DuplexTumble/Short-Edge Binding: "<</Duplex true /Tumble true>> setpagedevice"

@@ -2,7 +2,7 @@
 
 Stuff related to the HP Officejet Pro X476dw printer.
 
-* Improved PPD
+* Improved PPD, see [PPD - Pimp your Printder Driver](http://blog.schlomo.schapiro.org/2015/01/ppd-pimp-your-printer-driver.html) for full story
 
 ## Improved PPD
 

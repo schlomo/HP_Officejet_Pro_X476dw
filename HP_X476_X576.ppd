@@ -1,6 +1,6 @@
 *PPD-Adobe: "4.3"
 *% =================================
-*% Copyright 1992-2009 Hewlett-Packard Company
+*% Copyright 1992-2015 HP Company
 *% Permission is hereby granted, free of charge, to any person obtaining
 *% a copy of this software and associated documentation files (the
 *% "Software"), to deal in the Software without restriction, including
@@ -23,7 +23,7 @@
 *% [this is the MIT open source license -- please see www.opensource.org]
 *%
 *%%%% Created by the CUPS PPD Compiler CUPS v1.6.2.
-*% Copyright (c) 2012-2013 Hewlett-Packard Development Company, L.P.
+*% Copyright (c) 2012-2015 HP Development Company, L.P.
 *FormatVersion: "4.3"
 *FileVersion: "19.7"
 *LanguageVersion: English
@@ -35,6 +35,7 @@
 *Manufacturer: "HP"
 *ModelName: "HP Officejet Pro X476-X576 MFP"
 *ShortNickName: "HP Officejet Pro X476-X576 MFP"
+*1284DeviceID: "MFG:HP;MDL:hp officejet pro x476dn mfp;"
 *NickName: "HP Officejet Pro X476-X576 MFP Postscript (improved)"
 *PSVersion: "(3010.107) 0"
 *LanguageLevel: "3"
@@ -696,6 +697,7 @@
 *MediaType Envelope/Envelope: "<</ManualFeed false /MediaType (Envelope)>> setpagedevice"
 *MediaType HeavyEnvelope/Heavy Envelope: "<</ManualFeed false /MediaType (Heavy Envelope)>> setpagedevice"
 *CloseUI: *MediaType
+
 *OpenGroup: InstallableOptions/Installable Options
 *OpenUI *HPOption_Tray3/Tray 3: Boolean
 *OrderDependency: 0 AnySetup *HPOption_Tray3
@@ -708,11 +710,11 @@
 
 *OpenUI *HPPJLOutputMode/Print Quality: PickOne
 *OrderDependency: 5 JCLSetup *HPPJLOutputMode
-*DefaultHPPJLOutputMode: Professional
-*HPPJLOutputMode GeneralOffice/General Office: " "
-*HPPJLOutputMode Professional/Professional: " "
-*HPPJLOutputMode Presentation/Presentation: " "
-*HPPJLOutputMode MaximumDPI/Maximum dpi: " "
+*DefaultHPPJLOutputMode: GeneralOffice
+*HPPJLOutputMode GeneralOffice/General Office: ""
+*HPPJLOutputMode Professional/Professional: ""
+*HPPJLOutputMode Presentation/Presentation: ""
+*HPPJLOutputMode MaximumDPI/Maximum dpi: ""
 *CloseUI: *HPPJLOutputMode
 *CloseGroup: HPPaperQualityPanel
 *OpenGroup: HPColorOptionsPanel/Color
@@ -720,36 +722,36 @@
 *OpenUI *HPPJLDryTime/Dry Time: PickOne
 *OrderDependency: 70 JCLSetup *HPPJLDryTime
 *DefaultHPPJLDryTime: 0
-*HPPJLDryTime 0/0: " "
-*HPPJLDryTime Medium/Medium: " "
-*HPPJLDryTime Long/Long: " "
+*HPPJLDryTime 0/0: ""
+*HPPJLDryTime Medium/Medium: ""
+*HPPJLDryTime Long/Long: ""
 *CloseUI: *HPPJLDryTime
 
 *OpenUI *HPPJLSaturation/Saturation: PickOne
 *OrderDependency: 70 JCLSetup *HPPJLSaturation
 *DefaultHPPJLSaturation: 0
-*HPPJLSaturation -2/-2: " "
-*HPPJLSaturation -1/-1: " "
-*HPPJLSaturation 0/0: " "
-*HPPJLSaturation +1/+1: " "
-*HPPJLSaturation +2/+2: " "
+*HPPJLSaturation -2/-2: ""
+*HPPJLSaturation -1/-1: ""
+*HPPJLSaturation 0/0: ""
+*HPPJLSaturation +1/+1: ""
+*HPPJLSaturation +2/+2: ""
 *CloseUI: *HPPJLSaturation
 
 
 *OpenUI *HPPJLInkBleed/Black Ink Spread: PickOne
 *OrderDependency: 70 JCLSetup *HPPJLInkBleed
 *DefaultHPPJLInkBleed: Default
-*HPPJLInkBleed Least/Least: " "
-*HPPJLInkBleed Less/Less: " "
-*HPPJLInkBleed Default/Default: " "
+*HPPJLInkBleed Least/Least: ""
+*HPPJLInkBleed Less/Less: ""
+*HPPJLInkBleed Default/Default: ""
 *CloseUI: *HPPJLInkBleed
 
-*OpenUI *HPPJLColorAsGray/Print Color as Gray: Boolean
+*OpenUI *HPPJLColorAsGray/Print Color as Gray: PickOne
 *OrderDependency: 20 JCLSetup *HPPJLColorAsGray
 *DefaultHPPJLColorAsGray: False
-*HPPJLColorAsGray False/Off: " "
-*HPPJLColorAsGray HighQuality/High Quality: " "
-*HPPJLColorAsGray BlackInkOnly/Black Ink Only: " "
+*HPPJLColorAsGray False/Off: ""
+*HPPJLColorAsGray HighQuality/High Quality: ""
+*HPPJLColorAsGray BlackInkOnly/Black Ink Only: ""
 *CloseUI: *HPPJLColorAsGray
 
 *OpenUI *HPRGBEmulation/RGB Color: PickOne
